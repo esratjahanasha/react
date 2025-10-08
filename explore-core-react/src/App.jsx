@@ -1,0 +1,81 @@
+import "./App.css";
+import Todo from "./Todo";
+
+function App() {
+  const time = 60;
+  return (
+    <>
+      <h1>react core concepts</h1>
+      <Todo task="learn react" isdone={true} time={time}></Todo>
+      <Todo task="take shower" isdone={false}></Todo>
+      <Todo task="eng practice" isdone={true} time="50"></Todo>
+      {/* <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Student></Student>
+      <Developer name="asha" tech="mern"></Developer>
+      <Developer name="habi jabi" tech="js"></Developer>
+      <Developer name="baaa" tech="react"></Developer>
+      <Plyers name="sakib" runs="5000"></Plyers>
+      <Plyers name="mushi" runs="507800"></Plyers>
+      <Salami event="rojar eid" amount="500"></Salami>
+      <Salami event="bd"></Salami> */}
+    </>
+  );
+}
+
+function Person() {
+  const name = "asha";
+  const age = 12;
+  return (
+    <div className="person">
+      <p>name: {name}</p>
+      <p>id: {age}</p>
+    </div>
+  );
+}
+
+function Student() {
+  const name = "gh";
+  const age = 67;
+  const studentStyle = {
+    color: "green",
+    padding: "10px",
+    border: "2px solid pink",
+    textAlign: "right",
+  };
+  return (
+    <p style={studentStyle}>
+      dddddddddd{name}
+      {age}
+    </p>
+  );
+}
+
+function Developer(props) {
+  return (
+    <div style={{ border: "2px blue solid", margin: "20px", padding: "30px" }}>
+      <p>developer: {props.name}</p>
+      <p>tech: {props.tech}</p>
+    </div>
+  );
+}
+
+function Plyers({ name, runs }) {
+  return (
+    <div className="person">
+      <p>name:{name} </p>
+      <p>runs: {runs}</p>
+    </div>
+  );
+}
+
+function Salami({ event, amount = 0 }) {
+  return (
+    <div className="person">
+      <p>salami for: {event}</p>
+      <p>amount: {amount}</p>
+    </div>
+  );
+}
+export default App;
