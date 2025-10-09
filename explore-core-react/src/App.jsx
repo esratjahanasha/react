@@ -1,14 +1,44 @@
 import "./App.css";
 import Todo from "./Todo";
-
+import Actor from "./Actor";
+import Singer from "./Singer";
+import Libray from "./Library";
 function App() {
   const time = 60;
+  // const actors = ["asha", "omr", "sunny", "tasin"];
+  const singers = [
+    { id: 1, name: "asha", age: 23 },
+    { id: 2, name: "agteeeeeefda", age: 263 },
+  ];
+
+  const books=[
+  {id:1, name:"gk", price: 300},
+  {id:2, name:"bio", price:245},
+  {id:3, name:"fdra", price: 5560},
+  {id:4, name:"bangla", price: 300},
+  {id:5, name:"eng", price: 3400},
+  {id:6, name:"che", price:56},
+  {id:7, name:"math", price: 0},
+  ]
   return (
     <>
       <h1>react core concepts</h1>
-      <Todo task="learn react" isdone={true} time={time}></Todo>
+      
+<Libray books={books}></Libray>
+
+
+      {/* {singers.map((singer) => (
+        <Singer key={singer.id} singer={singer}></Singer>
+      ))} */}
+
+      {/* {actors.map((actor) =><Actor actor={actor}></Actor>
+        s
+      )} */}
+
+      {/* <Todo task="learn react" isdone={true} time={time}></Todo>
       <Todo task="take shower" isdone={false}></Todo>
       <Todo task="eng practice" isdone={true} time="50"></Todo>
+      <Todo task="reading" isdone={true} time=""></Todo> */}
       {/* <Person></Person>
       <Person></Person>
       <Person></Person>
