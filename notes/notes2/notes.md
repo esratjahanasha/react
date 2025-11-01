@@ -12,3 +12,7 @@
 ### 39-6 Load dynamic data, API call using use
 ### 39-7 (Recap) Load dynamic data using async await
 ### 39-8 ( Optional) Load data using useEffect hook (old process to load data)
+
+-- মেইন জিনিস হচ্ছে ছয়টা - JSX, component, props, events, state, আর effect 
+
+### 40-4 Use style in react and 3 column layout
