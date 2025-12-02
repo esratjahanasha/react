@@ -171,4 +171,5 @@ return <p>{name} is {age} years old.</p>;
 এটা অনেক cleaner।
 - **38-7 Six ways to do Conditional Rendering: If, Ternary and AND OR?**
 - **38-8 (advanced) Rendering lists of users using map**
+- ** 40-6 Lift up the state to handle child component event**
 

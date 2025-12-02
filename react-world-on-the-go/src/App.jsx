@@ -3,7 +3,7 @@ import "./App.css";
 import Countries from "./components/Countries/Countries";
 
 const countriespromise = fetch(
-  "https://jsonplaceholder.typicode.com/users"
+  "https://restcountries.com/v3.1/independent?status=true"
 ).then((res) => res.json());
 
 function App() {
