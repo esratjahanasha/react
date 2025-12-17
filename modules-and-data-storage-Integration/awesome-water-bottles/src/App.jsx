@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import "./App.css";
-import Bottles from './components/Bottles/Bottles'
+import Bottles from "./components/Bottles/Bottles";
 const bottlePromise = fetch("bottles.json").then((res) => res.json());
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       {/* 41-2 ES6 Modules, import default, relative path */}
       <h1>buy awesome water bottle</h1>
       <Suspense fallback={<h3>bottles are loading ...</h3>}>
-      <Bottles bottlePromise={bottlePromise}></Bottles>
+        <Bottles bottlePromise={bottlePromise}></Bottles>
       </Suspense>
     </>
   );
