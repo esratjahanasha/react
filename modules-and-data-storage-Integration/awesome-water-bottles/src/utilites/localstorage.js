@@ -25,6 +25,16 @@ const additemtocartlocalstorage = (id) => {
 };
 const savecarttolocalstorage = (cart) => {
   const cartstringified = JSON.stringify(cart);
-  localStorage.setItem(cartstringified);
+  localStorage.setItem("cart", cartstringified);
 };
-export { additemtocartlocalstorage, getCartFromLocalStorage };
+const removefromls = (id) => {
+  const storedcarts = getCartFromLocalStorage();
+  const remainingcartls = storedcarts.filter((storedid) => storedid !== id);
+
+  savecarttolocalstorage(remainingcartls);
+};
+export {
+  additemtocartlocalstorage as addtocart,
+  getCartFromLocalStorage as getstoredcart,
+  removefromls,
+};
